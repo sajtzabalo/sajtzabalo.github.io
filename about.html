@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+
+<body>
+    <h1>About</h1>
+    <p><a href="http://127.0.0.1:5500/index.html">home</a> => abszolút URL, amikor a teljes elérési utat megadom</p>
+    <p><a href="index.html">home</a> => relatív URL (relatív elérési út), nem kell megadni a teljes URL-t, mert
+        ugyanabban a mappában vannak</p>
+    <p><a href="/index.html">home</a> => route URL, mindig a domain gyökerétől nézi az útvonalat</p>
+    <p><a href="pages/orders.html">orders</a></p>
+
+    <table>
+        <caption>opening hours</caption>
+        <thead>
+            <tr>
+                <th>day</th>
+                <th>open</th>
+                <th>close</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>monday - friday</td>
+                <td>9:00</td>
+                <td>21:00</td>
+            </tr>
+            <tr>
+                <td>saturday</td>
+                <td>9:00</td>
+                <td>24:00</td>
+            </tr>
+            <tr>
+                <td>sunday</td>
+                <td>9:00</td>
+                <td>12:00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>&copy; 2020</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+
+
+
+
+    <table>
+        <caption>opening hours</caption>
+        <thead>
+            <tr>
+                <th>day</th>
+                <th>open</th>
+                <th>close</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>monday - friday</td>
+                <td rowspan="2">9:00</td>
+                <td>21:00</td>
+            </tr>
+            <tr>
+                <td>saturday</td>
+                <td>24:00</td>
+            </tr>
+            <tr>
+                <td>sunday</td>
+                <td colspan="2">closed</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">&copy; 2020</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+
+</html>
